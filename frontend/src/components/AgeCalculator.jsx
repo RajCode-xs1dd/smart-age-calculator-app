@@ -19,6 +19,7 @@ const AgeCalculator = ({ onCalculate }) => {
       }, 1000);
       return () => clearInterval(interval);
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [age, birthDate]);
 
   const calculateAge = (dateStr, isLiveUpdate = false) => {
